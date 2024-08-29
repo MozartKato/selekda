@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, initial-scale=1.0">
+    <title>DSGN - Illustration App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen">
+        <img src="images/logo.png" alt="DSGN Logo">
+        <h1>DSGN</h1>
+    </div>
+
+    <!-- Main App Interface -->
+    <div id="app-container">
+        <!-- Toolbar -->
+        <div id="toolbar">
+            <!-- Tool Buttons -->
+            <button id="brush-tool">Brush</button>
+            <button id="eraser-tool">Erase</button>
+            <button id="move-tool">Move</button>
+            <button id="shape-tool">Shape</button>
+            <button id="color-picker-tool">Color Picker</button>
+            <button id="paint-bucket-tool">Paint Bucket</button>
+            <button id="text-tool">Text</button>
+            <button id="clone-stamp-tool">Clone Stamp</button>
+        </div>
+
+        <!-- Work Area -->
+        <div id="work-area">
+            <canvas id="drawing-canvas"></canvas>
+        </div>
+
+        <!-- Properties Bar -->
+        <div id="properties-bar">
+            <!-- Brush Properties -->
+            <div id="brush-properties" class="tool-properties">
+                <label for="brush-size">Brush Size:</label>
+                <input type="range" id="brush-size" min="1" max="100" value="5">
+                <span id="brush-size-value">5</span>
+
+                <label for="brush-color">Brush Color:</label>
+                <input type="color" id="brush-color" value="#000000">
+
+                <label for="brush-opacity">Brush Opacity:</label>
+                <input type="range" id="brush-opacity" min="0" max="100" value="100">
+                <span id="brush-opacity-value">100</span>
+            </div>
+
+            <!-- Eraser Properties -->
+            <div id="eraser-properties" class="tool-properties">
+                <label for="eraser-size">Eraser Size:</label>
+                <input type="range" id="eraser-size" min="1" max="100" value="5">
+                <span id="eraser-size-value">5</span>
+
+                <label for="eraser-opacity">Eraser Opacity:</label>
+                <input type="range" id="eraser-opacity" min="0" max="100" value="100">
+                <span id="eraser-opacity-value">100</span>
+            </div>
+
+            <!-- Move Tool Properties -->
+            <div id="move-properties" class="tool-properties">
+                <label for="move-rotate">Rotate:</label>
+                <input type="number" id="move-rotate" value="0">
+
+                <label for="move-flip-horizontal">Flip Horizontal:</label>
+                <input type="checkbox" id="move-flip-horizontal">
+
+                <label for="move-flip-vertical">Flip Vertical:</label>
+                <input type="checkbox" id="move-flip-vertical">
+            </div>
+
+            <!-- Shape Tool Properties -->
+            <div id="shape-properties" class="tool-properties">
+                <label for="shape-type">Shape Type:</label>
+                <select id="shape-type">
+                    <option value="circle">Circle</option>
+                    <option value="square">Square</option>
+                    <option value="rectangle">Rectangle</option>
+                    <option value="line">Line</option>
+                </select>
+
+                <label for="shape-size">Size:</label>
+                <input type="range" id="shape-size" min="1" max="100" value="10">
+                <span id="shape-size-value">10</span>
+
+                <label for="shape-color">Color:</label>
+                <input type="color" id="shape-color" value="#000000">
+            </div>
+
+            <!-- Color Picker Properties -->
+            <div id="color-picker-properties" class="tool-properties">
+                <p>Click on the canvas to pick a color.</p>
+            </div>
+
+            <!-- Paint Bucket Properties -->
+            <div id="paint-bucket-properties" class="tool-properties">
+                <label for="paint-bucket-color">Fill Color:</label>
+                <input type="color" id="paint-bucket-color" value="#000000">
+            </div>
+
+            <!-- Text Tool Properties -->
+            <div id="text-properties" class="tool-properties">
+                <label for="text-typeface">Typeface:</label>
+                <select id="text-typeface">
+                    <option value="Arial">Arial</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <!-- Add more typefaces here -->
+                </select>
+
+                <label for="text-size">Size:</label>
+                <input type="range" id="text-size" min="8" max="200" value="16">
+                <span id="text-size-value">16</span>
+
+                <label for="text-style">Style:</label>
+                <select id="text-style">
+                    <option value="normal">Normal</option>
+                    <option value="bold">Bold</option>
+                    <option value="italic">Italic</option>
+                    <option value="underline">Underline</option>
+                </select>
+            </div>
+
+            <!-- Clone Stamp Properties -->
+            <div id="clone-stamp-properties" class="tool-properties">
+                <p>Select an area with Alt + Click, then paint with the clone stamp tool.</p>
+            </div>
+        </div>
+
+        <!-- Layer Bar -->
+        <div id="layer-bar">
+            <!-- Layer controls here -->
+        </div>
+
+        <div id="footer">
+            <!-- Tombol Undo, Redo, Zoom In, dan Zoom Out -->
+            <button id="undo-button">Undo</button>
+            <button id="redo-button">Redo</button>
+            <button id="zoom-in-button">Zoom In</button>
+            <button id="zoom-out-button">Zoom Out</button>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

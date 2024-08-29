@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail - WebTech Indonesia</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="assets/images/Logo Asli.png" alt="WebTech Indonesia Logo">
+                <h2>WebTech Indonesia</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="portofolio.html">Portfolio</a></li>
+                <li><a href="blog.html">News</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Blog Detail Section -->
+    <section class="blog-detail">
+        <div class="container">
+            <!-- Blog Details -->
+            <div class="blog-details">
+                <img src="assets/images/blog1.jpg" alt="Blog Detail Image" class="blog-image">
+                <h1 class="blog-title">Blog Post Title</h1>
+                <p class="blog-meta">By <span class="author">Author Name</span> | <span class="date">August 29, 2024</span> | Views: <span class="views">120</span> | Comments: <span class="comments">5</span></p>
+                <p class="blog-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor erat a lorem convallis, vel ullamcorper nulla fermentum. Praesent vitae libero at nunc dapibus aliquet.
+                </p>
+            </div>
+
+            <!-- Comment List -->
+            <div class="comment-section">
+                <h2>Comments</h2>
+                <div class="comment">
+                    <img src="assets/images/user1.jpg" alt="User Image" class="comment-user-img">
+                    <div class="comment-details">
+                        <h3>User Name</h3>
+                        <p class="comment-date">August 28, 2024</p>
+                        <p class="comment-text">This is a great post! I learned a lot from it.</p>
+                    </div>
+                </div>
+                <!-- Add more comments as needed -->
+            </div>
+
+            <!-- Comment Form -->
+            <div class="comment-form">
+                <h2>Leave a Comment</h2>
+                <form action="#" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="website">Website:</label>
+                    <input type="url" id="website" name="website">
+
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="5" required></textarea>
+
+                    <label for="captcha">Captcha:</label>
+                    <input type="text" id="captcha" name="captcha" placeholder="Enter Captcha" required>
+
+                    <button type="submit" class="submit-button">Submit Comment</button>
+                </form>
+            </div>
+
+            <!-- Popular Tags -->
+            <div class="popular-tags">
+                <h2>Popular Tags</h2>
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">E-commerce</a></li>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Development</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© Designed by: Muhammad Yazid</p>
+        <div class="social-links">
+            <a href="#"><img src="assets/images/fb.png" alt="facebook" class="social-logo"></a>
+            <a href="#"><img src="assets/images/twitter.png" alt="twitter" class="social-logo"></a>
+            <a href="#"><img src="assets/images/linkedin.png" alt="linkedin" class="social-logo"></a>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
