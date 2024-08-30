@@ -1,1 +1,1 @@
-Masih Proses semuanya :)
+Sudah Capek hehe
